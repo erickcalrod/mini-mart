@@ -1,4 +1,5 @@
 import { Heart, Users, Target, Award } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
@@ -125,12 +126,12 @@ const About: React.FC = () => {
           <p className="text-xl text-gray-600 mb-8">
             Experience the difference that quality and care make
           </p>
-          <a
-            href="/products"
+          <Link
+            to="/products"
             className="inline-block bg-indigo-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-700 transition-all transform hover:scale-105 shadow-lg"
           >
             Start Shopping
-          </a>
+          </Link>
         </div>
       </section>
     </div>

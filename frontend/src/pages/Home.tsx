@@ -1,4 +1,5 @@
 import { ShoppingBag, Truck, Shield, Headphones } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
   return (
@@ -15,12 +16,12 @@ const Home: React.FC = () => {
               Discover amazing products at unbeatable prices. Your one-stop shop
               for everything you need.
             </p>
-            <a
-              href="/products"
+            <Link
+              to="/products"
               className="inline-block bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-50 transition-all transform hover:scale-105 shadow-lg"
             >
               Shop Now
-            </a>
+            </Link>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0">
@@ -90,12 +91,12 @@ const Home: React.FC = () => {
             Explore our wide range of products and find exactly what you're
             looking for
           </p>
-          <a
-            href="/products"
+          <Link
+            to="/products"
             className="inline-block bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-50 transition-all transform hover:scale-105 shadow-lg"
           >
             Browse Products
-          </a>
+          </Link>
         </div>
       </section>
     </div>
